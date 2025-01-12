@@ -9,7 +9,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:3000") // Frontend origin
+                .allowedOrigins("https://sd-studios.vercel.app/") // Frontend origin
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Allow OPTIONS for preflight
                 .allowedHeaders("Content-Type", "Authorization") // Explicitly allow headers
                 .allowCredentials(true);
